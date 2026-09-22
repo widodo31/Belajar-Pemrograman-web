@@ -26,10 +26,10 @@
         //pemilihan menu berdasarkan level
         if($role == "admin"){
         ?>
-            <nav class="nav">
+            <nav class="nav">`
                 <a href="http://">Dashboard</a>
                 <a href="http://">Pemasukan</a>
-                <a href="http://">Pengeluaran</a>
+                <a href="pengeluaran.php">Pengeluaran</a>
                 <a href="http://">Laporan</a>
             </nav>
         <?php
@@ -45,7 +45,7 @@
         }elseif($role == "pengurus"){
         ?>
             <nav class="nav">
-                <a href="http://">Pengeluaran</a>
+                <a href="pengeluaran.php">Pengeluaran</a>
                 <a href="http://">Laporan</a>
             </nav>
         <?php 
