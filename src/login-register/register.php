@@ -32,7 +32,7 @@
         </label>
 
         <button class="submit" name="submit">Submit</button>
-        <p class="signin">Already have an acount? <a href="#">Signin</a></p>
+        <p class="signin">Already have an acount? <a href="login.php">Signin</a></p>
     </form>
 </body>
 </html>

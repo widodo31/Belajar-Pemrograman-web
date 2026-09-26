@@ -21,10 +21,10 @@
 
         <form action="login_cek.php" method="post">
             <label for="username"> Username</label>
-            <input type="text" name="email" class="form_login" id="username" placeholder="Username.." required="required">
+            <input type="text" name="email" class="form_login" id="username" placeholder="Username..">
 
             <label for="password">Password</label>
-            <input type="password" name="password" class="form_login" id="password" placeholder="Password.." required="required">
+            <input type="password" name="password" class="form_login" id="password" placeholder="Password..">
 
             <input type="submit" value="LOGIN" class="tombol_login">
 
