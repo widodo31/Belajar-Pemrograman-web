@@ -6,8 +6,18 @@ include 'config.php';
 $id = $_GET['id'];
 
 // query update
-$query = mysqli_query($conn, "SELECT * FROM mahasiswa WHERE id = '$id'");
-$data = mysqli_fetch_assoc($query);
+//menggunakan prepared statement
+// langkahnya adalah PBE (Prepare, Bind, Excute)
+// 1. Prepare
+$stmt = mysqli_prepare($conn, "SELECT * FROM mahasiswa WHERE id = ?");
+
+// 2. Bind
+mysqli_stmt_bind_param($stmt, "i", $id);
+
+// 3. Excute
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
+$data = mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -21,7 +21,7 @@
         </tr>
         <?php
             $no = 1;
-            $query = mysqli_query($conn, "SELECT * FROM mahasiswa");
+            $query = mysqli_query($conn, "SELECT * FROM mahasiswa WHERE Deleted_at IS NULL");
             while($data = mysqli_fetch_assoc($query)){
         ?>
                 <tr>
