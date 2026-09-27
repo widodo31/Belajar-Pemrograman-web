@@ -10,7 +10,12 @@
 </head>
 <body>
     <h2>DAFTAR MAHASISWA TAHUN 2026</h2>
-    <a href="input-mahasiswa.php">Tambah mahasiswa</a><br><br>
+    <a href="input-mahasiswa.php">Tambah mahasiswa</a>
+    <form action="search.php" method="get">
+        <input type="text" name="keyword" placeholder="Cari Nama Mahasiswa">
+        <button type="submit">Cari</button>
+    </form>
+    <br><br>
     <table border="1px">
         <tr>
             <td>No</td>
